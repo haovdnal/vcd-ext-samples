@@ -1,0 +1,9 @@
+{
+  "production": false,
+  "branding": {
+    "headerTitle": "VMware Cloud Director"
+  },
+  "credentials": {
+    "token": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbmlzdHJhdG9yIiwiaXNzIjoiYTkzYzlkYjktNzQ3MS0zMTkyLThkMDktYThmN2VlZGE4NWY5QDE5NDQ4NGRmLWQwMjMtNDY3ZC1hMDAzLTJiZjcxNTE4OWI2OSIsImV4cCI6MTY0NDU2MzgxNSwidmVyc2lvbiI6InZjbG91ZF8xLjAiLCJqdGkiOiI3MjhjYWNlNmJjYzM0ZTRkOTQxNDRiN2MzMjUzN2MzYyJ9.MjzQDsgQ8FpNxGjfgo_inxGcVZTIGAVnVjoXk9lD8xDDDlDZWhrlXxF-4pXp4SuHdfFK2-G2N8RVTLi4W49mGYvudaS2AAd-pfG5hLiWxtH-9V-J8KVDQEnrxuElbKAJuXJ7f29XKsF-inyQhkIA0TQOXfqcbblF05o-Zm7YUf0ICawuZBqUFMa3yyY_ORVBumu4j3DmSSLsWSzx-e0LvA2zErPlA6FgEXwwW_gz5F_Zhj87I2D4M9eNDeU6IxrHCMhrUjLa0Kbm1G1STBKqKAoWW17lDlTI0s2XnnSIcPPVN2HiNOa4seChqsM9q1Pr9s2XyIzw2N2CnCj8yge8uA"
+  }
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "label": "BookingPluginModule",
+    "root": "packages/uiPlugin/src",
+    "module": "main/Booking.module#BookingPluginModule"
+  }
+]

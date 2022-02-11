@@ -1,0 +1,14 @@
+{
+  "/api/*": {
+    "target": "https://100.64.100.20",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/cloudapi/*": {
+    "target": "https://100.64.100.20",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

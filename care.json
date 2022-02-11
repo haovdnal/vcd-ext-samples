@@ -1,0 +1,15 @@
+{
+    "vendor": "vmname",
+    "specVersion": "0.0.1",
+    "platformVersion": "",
+    "elements": [
+    {
+        "name": "types",
+        "type": "@vcd/care-package-plugin-types/TypesCarePackagePlugin"
+    },
+    {
+        "name": "uiPlugin",
+        "type": "@vcd/care-package-plugin-uiplugins/UiPluginCarePackagePlugin"
+    }
+]
+}

@@ -1,0 +1,32 @@
+{
+    "urn": "vmware:vcloud:plugin:vmname:Booking",
+    "name": "Booking plugin",
+    "containerVersion": "9.5.0",
+    "manifestVersion": "2.0.0",
+    "version": "0.0.2",
+    "scope": [
+        "service-provider",
+        "tenant"
+    ],
+    "permissions": [],
+    "description": "Booking Plugin",
+    "vendor": "vmname",
+    "license": "BSD-2-Clause",
+    "link": "http://example.com",
+    "extensionPoints": [
+        {
+            "urn": "urn:vmware:vcd:component-scope:primary-navigation",
+            "type": "navigation:primary",
+            "name": "%nav.label%",
+            "description": "%nav.description%",
+            "module": "BookingPluginModule",
+            "route": "Booking"
+        }
+    ],
+    "locales": {
+        "en": {
+            "nav.label": "Booking",
+            "nav.description": "A basic plugin project"
+        }
+    }
+}

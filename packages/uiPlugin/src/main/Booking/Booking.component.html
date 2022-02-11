@@ -1,0 +1,47 @@
+<div class="plugin-wrapper">
+  <h4>{{"ticketing.header" | translate}}</h4>
+  <div class="alert alert-danger" *ngIf="errorMessage">
+    <div class="alert-items">
+      <div class="alert-item static" role="alert">
+        <div class="alert-icon-wrapper">
+          <cds-icon class="alert-icon" shape="exclamation-circle"></cds-icon>
+        </div>
+        <span class="alert-text">
+        {{ errorMessage }}
+      </span>
+      </div>
+    </div>
+    <button type="button" class="close" aria-label="Close">
+      <cds-icon aria-hidden="true" shape="close"></cds-icon>
+    </button>
+  </div>
+  <div>
+    <button class="btn btn-link" (click)="openModalTicket()">NEW</button>
+    <button class="btn btn-link" (click)="openEditTicket()" [disabled]="!ticketSelected">Edit</button>
+    <button class="btn btn-link" (click)="openDeleteTicket()" [disabled]="!ticketSelected">DELETE</button>
+  </div>
+
+  <clr-datagrid [(clrDgSingleSelected)]="ticketSelected"
+                (clrDgSingleSelectedChange)="selectionChanged($event)"
+                  [clrDgLoading]="isLoading">
+    <clr-dg-column>ID</clr-dg-column>
+    <clr-dg-column>Type</clr-dg-column>
+    <clr-dg-column>Description</clr-dg-column>
+    <clr-dg-column>Status</clr-dg-column>
+
+    <clr-dg-row *clrDgItems="let ticket of tickets" [clrDgItem]="ticket">
+      <clr-dg-cell>{{ticket.id}}</clr-dg-cell>
+      <clr-dg-cell>{{ticket.entity.type}}</clr-dg-cell>
+      <clr-dg-cell>{{ticket.entity.description}}</clr-dg-cell>
+      <clr-dg-cell>{{ticket.entity.status}}</clr-dg-cell>
+    </clr-dg-row>
+
+  </clr-datagrid>
+
+
+</div>
+<ticket-modal
+        #ticketModal
+        (ticketEdited)="onEditConfirm($event)"
+        (ticketSubmitted)="onCreateConfirm($event)"></ticket-modal>
+<delete-modal #deleteModal></delete-modal>
